@@ -62,11 +62,11 @@ After editing the above line to run the experiment for your choice of signal, th
 ## Results
 Once the experiment finishes, the variable 'prob' in the workspace represents the success probability grid as described above.  
 You can plot the grid to observe the phase transition diagram.  
-The below commands should be run to get a 'imagesc' plot.
+The below commands should be run to get the phase transition diagram.
 ```
 xaxis = 0.05:1/30:1;
 yaxis = 0.05:1/30:1;
 imagesc(prob,xaxis,yaxis);
 set(gca,'YDir','normal');
 ```
-The results and plots obtaind by my experimentation are present in the folder 'Images'.
+The results and plots obtaind by my experimentation are present in the folder 'data'.
