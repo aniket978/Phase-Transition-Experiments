@@ -32,6 +32,19 @@ A = (sign(rand(n,N) - .5).* (1 -abs(1 - rand(n,N) - rand(n,N))));
 formed by randomly sampling from DCT matrices.
 6. 2D DCT - It consists of matrices of discrete cosine transform in 2 dimensions. It is
 formed by randomly sampling from 2D DCT matrices.
+
+The following signals are used for Sparse Recovery:
+1. Gaussian - The k non-zeros consist of uniformly distributed random numbers in the
+interval (0,1).
+2. {0,1} - The k non-zeros consist of only 1s.
+3. {0,1,-1} - The k non-zeros consist of either +1 or -1 chosen by i.i.d. fair coin tossing.
+4. High Entropy Signal - The k non-zero values have high entropy i.e. they are extremely
+large at some places and small at other places. For the experiments done here, half of
+the non-zeros lie in interval (0,01̇) while the other half lies in the interval (09̇,1). Their
+positions are chosen by i.i.d. fair coin tossing.
+The positions of k non-zeros in the k-sparse signal in all cases are chosen uniformly at random
+without replacement.
+
 ## Acknowledgements
 The file SparseVector.m is a modified version of the file available at [SparseLab](https://sparselab.stanford.edu).
 ## Installations
