@@ -13,7 +13,7 @@ denoted the values of rho and delta corresponding to no recovery. Instead of bin
 perfect and no recovery, the probabilities of success and failure over M Monte-Carlo trials were
 used to classify the regions in the grid.
 ## Acknowledgements
-The file SparseVector.m is a modified version of the file available at [SparseLab][https://sparselab.stanford.edu]
+The file SparseVector.m is a modified version of the file available at [SparseLab](https://sparselab.stanford.edu)
 ## Installations
 Install CVX tool from Matlab
 Run cvx_setup
